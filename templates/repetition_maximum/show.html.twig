@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}RepetitionMaximum{% endblock %}
+
+{% block body %}
+    <h1>RepetitionMaximum</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ repetition_maximum.id }}</td>
+            </tr>
+            <tr>
+                <th>Weight</th>
+                <td>{{ repetition_maximum.weight }}</td>
+            </tr>
+            <tr>
+                <th>Reps</th>
+                <td>{{ repetition_maximum.reps }}</td>
+            </tr>
+            <tr>
+                <th>RmDate</th>
+                <td>{{ repetition_maximum.rmDate ? repetition_maximum.rmDate|date('Y-m-d H:i:s') : '' }}</td>
+            </tr>
+            <tr>
+                <th>RmTime</th>
+                <td>{{ repetition_maximum.rmTime ? repetition_maximum.rmTime|date('H:i:s') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('repetition_maximum_index') }}">back to list</a>
+
+    <a href="{{ path('repetition_maximum_edit', {'id': repetition_maximum.id}) }}">edit</a>
+
+    {{ include('repetition_maximum/_delete_form.html.twig') }}
+{% endblock %}
