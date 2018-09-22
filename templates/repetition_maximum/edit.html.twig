@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit RepetitionMaximum{% endblock %}
+
+{% block body %}
+    <h1>Edit RepetitionMaximum</h1>
+
+    {{ include('repetition_maximum/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('repetition_maximum_index') }}">back to list</a>
+
+    {{ include('repetition_maximum/_delete_form.html.twig') }}
+{% endblock %}
