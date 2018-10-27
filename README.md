@@ -55,6 +55,10 @@ php bin/console server:start
 
 [http://localhost:8000](http://localhost:8000)
 
+## TESTS
+```
+bin/phpunit
+```
 
 ## API
 
