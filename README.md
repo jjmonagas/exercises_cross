@@ -1,5 +1,9 @@
 # exercises_cross
-Symfony 4 with API Platform & JWT Authentication - VueJs Project. Crossfit exercises list
+Symfony 4 with API Platform & JWT Authentication - WebPack Encore - VueJs Project. Crossfit exercises list
+
+## Requirements
+
+* PHP 7.1.3 or higher;
 
 # How to
 
@@ -18,7 +22,7 @@ DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name
 
 ```
 php bin/console doctrine:database:create
-php bin/console doctrine:schema:update
+php bin/console doctrine:schema:update --force
 php bin/console doctrine:fixtures:load
 ```
 
