@@ -3,10 +3,7 @@
 namespace App\Controller;
 
 use App\Entity\Exercise;
-use App\Repository\ExerciseRepository;
-use App\Service\ExerciseManager;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -20,13 +17,9 @@ class ExerciseController extends Controller
     /**
      * @Route("/", name="exercise_index")
      */
-    public function list(ExerciseManager $exerciseManager)
+    public function list()
     {
         return $this->render('exercise/index.html.twig');
-        /*$exercises = $exerciseManager->getAllExercises();
-        return $this->render(':exercise:index.html.twig', [
-            'exercises' => $exercises,
-        ]);*/
     }
 
     /**
