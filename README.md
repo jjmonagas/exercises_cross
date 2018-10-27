@@ -1,6 +1,10 @@
 # exercises_cross
 Symfony 4 with API Platform & JWT Authentication - VueJs Project. Crossfit exercises list
 
+## Requirements
+
+* PHP 7.1.3 or higher;
+
 # How to
 
 ### Installing dependencies
