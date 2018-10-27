@@ -1,5 +1,5 @@
 # exercises_cross
-Symfony 4 with API Platform & JWT Authentication - VueJs Project. Crossfit exercises list
+Symfony 4 with API Platform & JWT Authentication - WebPack Encore - VueJs Project. Crossfit exercises list
 
 ## Requirements
 
