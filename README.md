@@ -18,7 +18,7 @@ DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name
 
 ```
 php bin/console doctrine:database:create
-php bin/console doctrine:schema:update
+php bin/console doctrine:schema:update --force
 php bin/console doctrine:fixtures:load
 ```
 
