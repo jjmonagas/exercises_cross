@@ -68,5 +68,12 @@ username: exercise
 password: ex.Cr0ss
 ```
 
-### Postman Collention
+### End Points JWT Authentication
+´´´
+POST http://localhost:8000/api/login_check  -> Return token
+GET http://localhost:8000/api/exercises  -> Return Exercises List
+POST http://localhost:8000/api/exercises -> Create a new Exercise
+´´´
+
+### Postman Collention - [Postman](https://www.getpostman.com/)
 PROJECT_DIR/Exercises_Cross.postman_collection.json
