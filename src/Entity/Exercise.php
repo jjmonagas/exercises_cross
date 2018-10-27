@@ -33,6 +33,7 @@ class Exercise
      */
     private $repetitionMaximums;
 
+
     public function __construct()
     {
         $this->repetitionMaximums = new ArrayCollection();

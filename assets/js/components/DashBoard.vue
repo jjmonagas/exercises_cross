@@ -20,7 +20,9 @@
             }
         },
         created: function() {
-            api.getToken()
+            api.getToken().then( response => {
+                this.$router.push('/exercise/list')
+            });
         }
     }
 </script>
